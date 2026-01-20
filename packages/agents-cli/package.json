@@ -1,5 +1,5 @@
 {
-  "name": "@elevenlabs/agents-cli",
+  "name": "@ambernexus/agents-cli",
   "version": "0.6.2",
   "description": "CLI tool to manage ElevenLabs agents",
   "type": "module",
@@ -43,6 +43,7 @@
     "format": "prettier --write src/**/*.ts"
   },
   "dependencies": {
+    "@ambernexus/ambernexus-js": "workspace:*",
     "@elevenlabs/elevenlabs-js": "2.18.0",
     "@inkjs/ui": "^2.0.0",
     "@types/read": "^0.0.32",
