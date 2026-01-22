@@ -10,7 +10,7 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "@elevenlabs/convai-widget-core": "workspace:*"
+    "@ambernexus/convai-widget-core": "workspace:*"
   },
   "license": "MIT"
 }

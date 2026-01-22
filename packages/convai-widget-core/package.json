@@ -43,7 +43,7 @@
     "vitest": "^3.1.2"
   },
   "dependencies": {
-    "@ambernexus/client": "workspace:*",
+    "@ambernexus/client": "^0.12.3",
     "@lezer/common": "^1.3.0",
     "@lezer/highlight": "^1.2.3",
     "@lezer/html": "^1.3.12",

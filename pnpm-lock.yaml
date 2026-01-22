@@ -175,7 +175,7 @@ importers:
 
   packages/amber-agent-widget-core:
     dependencies:
-      '@elevenlabs/convai-widget-core':
+      '@ambernexus/convai-widget-core':
         specifier: workspace:*
         version: link:../convai-widget-core
 
@@ -188,7 +188,7 @@ importers:
   packages/client:
     dependencies:
       '@ambernexus/types':
-        specifier: workspace:*
+        specifier: ^0.4.1
         version: link:../types
       livekit-client:
         specifier: ^2.11.4
@@ -225,7 +225,7 @@ importers:
   packages/convai-widget-core:
     dependencies:
       '@ambernexus/client':
-        specifier: workspace:*
+        specifier: ^0.12.3
         version: link:../client
       '@lezer/common':
         specifier: ^1.3.0
@@ -342,7 +342,7 @@ importers:
       '@ambernexus/amber-agent-widget-core':
         specifier: workspace:*
         version: link:../amber-agent-widget-core
-      '@elevenlabs/convai-widget-core':
+      '@ambernexus/convai-widget-core':
         specifier: workspace:*
         version: link:../convai-widget-core
       eslint:
@@ -364,7 +364,7 @@ importers:
   packages/react:
     dependencies:
       '@ambernexus/client':
-        specifier: workspace:*
+        specifier: ^0.12.3
         version: link:../client
       react:
         specifier: '>=16.8.0'
@@ -458,6 +458,9 @@ importers:
 
   packages/types:
     devDependencies:
+      '@ambernexus/typescript-config':
+        specifier: ^0.0.0
+        version: link:../typescript-config
       '@asyncapi/cli':
         specifier: ^2.17.0
         version: 2.17.0(@babel/core@7.12.9)(@types/babel__core@7.20.5)(@types/node@22.19.2)(csstype@3.2.3)(encoding@0.1.13)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(ts-node@10.9.2(@types/node@22.19.2)(typescript@5.9.3))
@@ -467,9 +470,6 @@ importers:
       '@asyncapi/parser':
         specifier: ^3.4.0
         version: 3.4.0(encoding@0.1.13)
-      '@elevenlabs/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@types/node':
         specifier: ^22.10.5
         version: 22.19.2
@@ -1580,9 +1580,15 @@ packages:
       react: '>16.8.0'
       react-dom: '>16.8.0'
 
+  '@elevenlabs/client@0.13.0':
+    resolution: {integrity: sha512-0UjouSOVK+mECJuYg/DqM9V1NIsabIrlRmw/RjEMS5UmOpsAga3KxMC3et8fKh8G/MI2cZtLr2764wIOZgyrQg==}
+
   '@elevenlabs/elevenlabs-js@2.18.0':
     resolution: {integrity: sha512-nHePkqhcxon43Oms87EhrAYHBhZ7Lhdiw4TkQiwM3zSDFzJ/8tWlrwUAFnS2oZi6fRQAdAwON1NJsz3yStKsQg==}
     engines: {node: '>=18.0.0'}
+
+  '@elevenlabs/types@0.4.0':
+    resolution: {integrity: sha512-6CQb4r9DjepILhLybDxW0h8rvbsR8jPAp74HvFGYuvYdXcQRTkYTD9BQ4PV6VcuC1iqx0UljzJj8js3ADQ8EXw==}
 
   '@epic-web/invariant@1.0.0':
     resolution: {integrity: sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==}
@@ -13807,12 +13813,21 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
+  '@elevenlabs/client@0.13.0(@types/dom-mediacapture-record@1.0.22)':
+    dependencies:
+      '@elevenlabs/types': 0.4.0
+      livekit-client: 2.16.0(@types/dom-mediacapture-record@1.0.22)
+    transitivePeerDependencies:
+      - '@types/dom-mediacapture-record'
+
   '@elevenlabs/elevenlabs-js@2.18.0(encoding@0.1.13)':
     dependencies:
       command-exists: 1.2.9
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
+
+  '@elevenlabs/types@0.4.0': {}
 
   '@epic-web/invariant@1.0.0': {}
 

@@ -1,1 +1,1 @@
-export * from '@elevenlabs/convai-widget-core';
+export * from '@ambernexus/convai-widget-core';
