@@ -1,6 +1,6 @@
 {
   "name": "@ambernexus/react",
-  "version": "0.12.7",
+  "version": "0.12.9",
   "description": "AmberNexus branded wrapper for the ElevenLabs React Library",
   "main": "./dist/lib.umd.js",
   "module": "./dist/lib.module.js",
@@ -17,7 +17,6 @@
   },
   "scripts": {
     "generate-version": "node -e \"require('fs').writeFileSync('src/version.ts', '// This file is auto-generated during build\\nexport const PACKAGE_VERSION = \\\"' + process.env.npm_package_version + '\\\";\\n')\"",
-
     "prebuild": "npm run generate-version",
     "build": "cross-env BROWSERSLIST_ENV=modern microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react src/index.ts",
     "clean": "rm -rf ./dist",
@@ -33,7 +32,7 @@
   "author": "ElevenLabs",
   "license": "MIT",
   "dependencies": {
-    "@ambernexus/client": "^0.13.2"
+    "@ambernexus/client": "^0.13.5"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
@@ -52,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elevenlabs/packages.git",
+    "url": "git+https://github.com/ambernexus/packages.git",
     "directory": "packages/react"
   },
   "publishConfig": {

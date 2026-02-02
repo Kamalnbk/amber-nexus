@@ -1,5 +1,3 @@
-![hero](../../assets/hero.png)
-
 # AmberNexus Agents React SDK
 
 Build multimodal agents with the [AmberNexus Agents platform](https://ambernexus.io/docs/agents-platform/overview).
@@ -256,7 +254,7 @@ app.get("/signed-url", yourAuthMiddleware, async (req, res) => {
       headers: {
         // Requesting a signed url requires your AmberNexus API key
         // Do NOT expose your API key to the client!
-        "xi-api-key": process.env.ELEVENLABS_API_KEY,
+        "xi-api-key": process.env.AMBERNEXUS_API_KEY,
       },
     }
   );
@@ -296,7 +294,7 @@ app.get("/conversation-token", yourAuthMiddleware, async (req, res) => {
       headers: {
         // Requesting a conversation token requires your AmberNexus API key
         // Do NOT expose your API key to the client!
-        'xi-api-key': process.env.ELEVENLABS_API_KEY,
+        'xi-api-key': process.env.AMBERNEXUS_API_KEY,
       }
     }
   );
@@ -618,7 +616,7 @@ app.get("/scribe-token", yourAuthMiddleware, async (req, res) => {
     {
       method: "POST",
       headers: {
-        "xi-api-key": process.env.ELEVENLABS_API_KEY,
+        "xi-api-key": process.env.AMBERNEXUS_API_KEY,
       },
     }
   );

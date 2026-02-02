@@ -1,5 +1,3 @@
-![hero](../../assets/hero.png)
-
 # AmberNexus Agents Typescript SDK
 
 Build multimodal agents with the [AmberNexus Agents platform](https://ambernexus.io/docs/agents-platform/overview).
@@ -20,6 +18,58 @@ npm install @ambernexus/client
 yarn add @ambernexus/client
 # or
 pnpm install @ambernexus/client
+```
+## Angular Compatibility Instructions
+🛠️ Required TypeScript Configuration Changes
+
+To successfully build your Angular application after installing @ambernexus/client, you must update your Angular project’s TypeScript configuration files.
+
+This is necessary because @ambernexus/client re-exports typed APIs originally from @elevenlabs/client, some of which reference newer DOM APIs and TypeScript constructs that Angular’s default tsconfig does not include.
+
+#### ⚙️ Update tsconfig.app.json
+
+Add additional libs, and optionally enable skipLibCheck to avoid type errors from third-party declaration files:
+
+```js
+  {
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "lib": [
++       "ES2022",
++       "dom",
++       "es2020.intl"
+      ],
++     "skipLibCheck": true,
+    }
+  }
+```
+
+"ES2022" ensures support for modern ECMAScript types referenced by the SDK.
+
+"dom" enables browser API types required by audio/RTC features.
+
+"es2020.intl" adds internationalization type support (optional, but may be needed).
+
+"skipLibCheck": true avoids unnecessary type errors in external .d.ts files.
+
+#### ⚙️ Update tsconfig.json
+
+Ensure your root TypeScript config also includes the same libs:
+
+```js
+  {
+    "compilerOptions": {
+      "lib": [
++       "ES2022",
+        "dom",
++       "es2020.intl"
+      ],
+      "allowJs": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true
+    }
+  }
 ```
 
 ## Usage
@@ -85,7 +135,7 @@ app.get("/signed-url", yourAuthMiddleware, async (req, res) => {
       headers: {
         // Requesting a signed url requires your AmberNexus API key
         // Do NOT expose your API key to the client!
-        "xi-api-key": process.env.ELEVENLABS_API_KEY,
+        "xi-api-key": process.env.AMBERNEXUS_API_KEY,
       },
     }
   );
@@ -123,7 +173,7 @@ app.get("/conversation-token", yourAuthMiddleware, async (req, res) => {
       headers: {
         // Requesting a conversation token requires your AmberNexus API key
         // Do NOT expose your API key to the client!
-        'xi-api-key': process.env.ELEVENLABS_API_KEY,
+        'xi-api-key': process.env.AMBERNEXUS_API_KEY,
       }
     }
   );
@@ -494,7 +544,7 @@ app.get("/scribe-token", yourAuthMiddleware, async (req, res) => {
     {
       method: "POST",
       headers: {
-        "xi-api-key": process.env.ELEVENLABS_API_KEY,
+        "xi-api-key": process.env.AMBERNEXUS_API_KEY,
       },
     }
   );
