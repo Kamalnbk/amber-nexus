@@ -1,7 +1,7 @@
 {
   "name": "@ambernexus/convai-widget-embed",
-  "version": "0.5.5",
-  "description": "The Conversational AI Widget bundled with all dependencies for easy embedding.",
+  "version": "0.5.6",
+  "description": "AmberNexus branded wrapper for the Elevenlabs Conversational AI Widget",
   "main": "./dist/index.js",
   "unpkg": "./dist/index.js",
   "source": "src/index.ts",

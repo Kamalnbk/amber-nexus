@@ -1,6 +1,6 @@
 {
   "name": "@ambernexus/react-native",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "AmberNexus branded wrapper for the ElevenLabs React Native SDK for Conversational AI",
   "main": "./dist/lib.js",
   "module": "./dist/lib.module.js",

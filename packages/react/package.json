@@ -1,6 +1,6 @@
 {
   "name": "@ambernexus/react",
-  "version": "0.12.9",
+  "version": "0.13.10",
   "description": "AmberNexus branded wrapper for the ElevenLabs React Library",
   "main": "./dist/lib.umd.js",
   "module": "./dist/lib.module.js",
