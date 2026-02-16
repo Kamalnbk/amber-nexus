@@ -1,5 +1,5 @@
 {
-  "extends": "@elevenlabs/typescript-config/base.json",
+  "extends": "@ambernexus/typescript-config/base.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./",
