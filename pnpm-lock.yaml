@@ -33,8 +33,8 @@ importers:
   packages/client:
     dependencies:
       '@ambernexus/types':
-        specifier: ^0.4.1
-        version: 0.4.3
+        specifier: ^0.4.5
+        version: link:../types
       livekit-client:
         specifier: ^2.11.4
         version: 2.17.1(@types/dom-mediacapture-record@1.0.22)
@@ -70,7 +70,7 @@ importers:
   packages/types:
     devDependencies:
       '@ambernexus/typescript-config':
-        specifier: ^0.0.0
+        specifier: ^0.0.3
         version: link:../typescript-config
       '@asyncapi/cli':
         specifier: ^2.17.0
@@ -107,9 +107,6 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
-
-  '@ambernexus/types@0.4.3':
-    resolution: {integrity: sha512-0KhLBm6IfLgh5QeWN+oCjKkgfhiaDoninwSeeQ93X9dz8YYhtMS62fx3gkCpS3fqVO0DVg46k/Exx3jGJzTfYQ==}
 
   '@apidevtools/json-schema-ref-parser@11.7.2':
     resolution: {integrity: sha512-4gY54eEGEstClvEkGnwVkTkrx0sqwemEFG5OSRRn3tD91XH0+Q8XIkYIfo7IwEWPpJZwILb9GUXeShtplRc/eA==}
@@ -7153,8 +7150,6 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
-
-  '@ambernexus/types@0.4.3': {}
 
   '@apidevtools/json-schema-ref-parser@11.7.2':
     dependencies:

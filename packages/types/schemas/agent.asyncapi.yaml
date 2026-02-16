@@ -1,6 +1,6 @@
 asyncapi: "2.6.0"
 info:
-  title: ElevenLabs Agents Contract
+  title: Ambernexus Agents Contract
   version: "1.0.0"
   description: |
     Real-time Agents with voice synthesis and transcription.
@@ -12,27 +12,9 @@ info:
     - All other messages use explicit type field for routing
     - Client events can be selectively enabled via conversation config
   contact:
-    name: ElevenLabs API Support
-    url: https://elevenlabs.io/docs
-    email: support@elevenlabs.io
+    name: Ambernexus API Support
 
 servers:
-  production:
-    url: wss://api.elevenlabs.io
-    protocol: ws
-    description: Production WebSocket server (US/Global)
-  eu-residency:
-    url: wss://api.eu.residency.elevenlabs.io
-    protocol: ws
-    description: EU residency WebSocket server for GDPR compliance
-  in-residency:
-    url: wss://api.in.residency.elevenlabs.io
-    protocol: ws
-    description: India residency WebSocket server for data locality
-  webrtc:
-    url: wss://livekit.rtc.elevenlabs.io
-    protocol: ws
-    description: WebRTC/LiveKit server for real-time communication
   development:
     url: ws://localhost:8080
     protocol: ws
