@@ -4,9 +4,7 @@ This project has no affiliation or endorsement by ElevenLabs. This is a fork and
 
 # AmberNexus Agents Typescript SDK
 
-Build multimodal agents with the [AmberNexus Agents platform](https://ambernexus.io/docs/agents-platform/overview).
-
-An SDK library for using AmberNexus Agents. If you're looking for a Node.js library for other audio APIs, please refer to the [AmberNexus Node.js Library](https://www.npmjs.com/package/@ambernexus/ambernexus-js).
+Build multimodal agents with the [AmberNexus Agents platform]().
 
 ![LOGO](./assets/logo.svg)
 
