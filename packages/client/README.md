@@ -4,13 +4,9 @@ This project has no affiliation or endorsement by ElevenLabs. This is a fork and
 
 # AmberNexus Agents Typescript SDK
 
-Build multimodal agents with the [AmberNexus Agents platform](https://ambernexus.io/docs/agents-platform/overview).
+Build multimodal agents with the [AmberNexus Agents platform]().
 
-An SDK library for using AmberNexus Agents. If you're looking for a Node.js library for other audio APIs, please refer to the [AmberNexus Node.js Library](https://www.npmjs.com/package/@ambernexus/ambernexus-js).
-
-![LOGO](https://github.com/ambernexus/ambernexus-python/assets/12028621/21267d89-5e82-4e7e-9c81-caf30b237683)
-[![Discord](https://badgen.net/badge/black/AmberNexus/icon?icon=discord&label)](https://discord.gg/ambernexus)
-[![Twitter](https://badgen.net/badge/black/ambernexusio/icon?icon=twitter&label)](https://twitter.com/ambernexusio)
+![LOGO](./assets/logo.svg)
 
 ## Installation
 
@@ -18,17 +14,13 @@ Install the package in your project through package manager.
 
 ```shell
 npm install @ambernexus/client
-# or
-yarn add @ambernexus/client
-# or
-pnpm install @ambernexus/client
 ```
 ## Angular Compatibility Instructions
 🛠️ Required TypeScript Configuration Changes
 
 To successfully build your Angular application after installing @ambernexus/client, you must update your Angular project’s TypeScript configuration files.
 
-This is necessary because @ambernexus/client re-exports typed APIs originally from @elevenlabs/client, some of which reference newer DOM APIs and TypeScript constructs that Angular’s default tsconfig does not include.
+This is necessary because some of which reference newer DOM APIs and TypeScript constructs that Angular’s default tsconfig does not include.
 
 #### ⚙️ Update tsconfig.app.json
 
