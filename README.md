@@ -4,7 +4,11 @@ This project has no affiliation or endorsement by ElevenLabs. This is a fork and
 
 # AmberNexus Agents SDK
 
-Build multimodal agents with the [AmberNexus Agents platform](). Our SDKs provide seamless integration with popular JavaScript/TypeScript frameworks, enabling you to create multimodal AI agents.
+Build multimodal agents with the [AmberNexus Agents platform](). 
+
+![LOGO](./assets/logo.svg)
+
+Our SDKs provide seamless integration with popular JavaScript/TypeScript frameworks, enabling you to create multimodal AI agents.
 
 
 ## Overview
@@ -45,7 +49,7 @@ For detailed documentation, visit:
 
 ## Support
 
-- [Support Email](mailto:)
+- [Support Email](mailto:ambernexus-support@myambergroup.com)
 
 ### Development Setup
 
@@ -66,12 +70,6 @@ pnpm run test
 
 # Start development mode
 pnpm run dev
-```
-
-### Creating a New Package
-
-```bash
-pnpm run create --name=my-new-package
 ```
 
 ## License

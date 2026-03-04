@@ -104,7 +104,7 @@ The options passed to `startSession` specifiy how the session is established. Th
 
 ##### Public agents
 
-Agents that don't require any authentication can be used to start a conversation by using the agent ID and the connection type. The agent ID can be acquired through the [AmberNexus UI](https://ambernexus.io/app/conversational-ai).
+Agents that don't require any authentication can be used to start a conversation by using the agent ID and the connection type. The agent ID can be acquired through the [AmberNexus UI](https://dev-12labs-portal.pocweburl.com).
 
 For public agents, you can use the ID directly:
 
@@ -114,10 +114,6 @@ const conversation = await Conversation.startSession({
   connectionType: "webrtc", // 'websocket' is also accepted
 });
 ```
-
-##### Private agents
-
-If the conversation requires authorization, you will need to add a dedicated endpoint to your server that will either request a signed url (if using the WebSockets connection type) or a conversation token (if using WebRTC) using the [AmberNexus API](https://ambernexus.io/docs/introduction) and pass it back to the client.
 
 Here's an example for a WebSocket connection:
 
